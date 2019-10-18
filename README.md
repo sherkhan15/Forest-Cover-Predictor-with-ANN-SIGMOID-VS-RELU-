@@ -14,11 +14,17 @@ what types of trees grow in an area based on the surrounding characteristics?
 The study area includes four wilderness areas located in the Roosevelt National Forest of northern Colorado. Each observation is a 30m x 30m patch. You are asked to predict an integer classification for the forest cover type. The seven types are:
 
 1 - Spruce/Fir
+
 2 - Lodgepole Pine
+
 3 - Ponderosa Pine
+
 4 - Cottonwood/Willow
+
 5 - Aspen
+
 6 - Douglas-fir
+
 7 - Krummholz
 
 
@@ -26,66 +32,106 @@ The training set (15120 observations) contains both features and the Cover_Type.
 
 
 * Data Fields
-* * * * * * * * * * * * * Elevation - Elevation in meters
-* * * * * * * * * * * * Aspect - Aspect in degrees azimuth
-* * * * * * * * * * * Slope - Slope in degrees
-* * * * * * * * * * Horizontal_Distance_To_Hydrology - Horz Dist to nearest surface water features
-* * * * * * * * * Vertical_Distance_To_Hydrology - Vert Dist to nearest surface water features
-* * * * * * * * Horizontal_Distance_To_Roadways - Horz Dist to nearest roadway
-* * * * * * * Hillshade_9am (0 to 255 index) - Hillshade index at 9am, summer solstice
-* * * * * * Hillshade_Noon (0 to 255 index) - Hillshade index at noon, summer solstice
-* * * * * Hillshade_3pm (0 to 255 index) - Hillshade index at 3pm, summer solstice
-* * * * Horizontal_Distance_To_Fire_Points - Horz Dist to nearest wildfire ignition points
-* * * Wilderness_Area (4 binary columns, 0 = absence or 1 = presence) - Wilderness area designation
-* * Soil_Type (40 binary columns, 0 = absence or 1 = presence) - Soil Type designation
+* Elevation - Elevation in meters
+* Aspect - Aspect in degrees azimuth
+* Slope - Slope in degrees
+* Horizontal_Distance_To_Hydrology - Horz Dist to nearest surface water features
+* Vertical_Distance_To_Hydrology - Vert Dist to nearest surface water features
+* Horizontal_Distance_To_Roadways - Horz Dist to nearest roadway
+* Hillshade_9am (0 to 255 index) - Hillshade index at 9am, summer solstice
+* Hillshade_Noon (0 to 255 index) - Hillshade index at noon, summer solstice
+* Hillshade_3pm (0 to 255 index) - Hillshade index at 3pm, summer solstice
+* Horizontal_Distance_To_Fire_Points - Horz Dist to nearest wildfire ignition points
+* Wilderness_Area (4 binary columns, 0 = absence or 1 = presence) - Wilderness area designation
+* Soil_Type (40 binary columns, 0 = absence or 1 = presence) - Soil Type designation
 * Cover_Type (7 types, integers 1 to 7) - Forest Cover Type designation
 
 The wilderness areas are:
 
-1 - Rawah Wilderness Area
-2 - Neota Wilderness Area
-3 - Comanche Peak Wilderness Area
-4 - Cache la Poudre Wilderness Area
+- Rawah Wilderness Area
+- Neota Wilderness Area
+- Comanche Peak Wilderness Area
+- Cache la Poudre Wilderness Area
 
 The soil types are:
 
-1 Cathedral family - Rock outcrop complex, extremely stony.
-2 Vanet - Ratake families complex, very stony.
-3 Haploborolis - Rock outcrop complex, rubbly.
-4 Ratake family - Rock outcrop complex, rubbly.
-5 Vanet family - Rock outcrop complex complex, rubbly.
-6 Vanet - Wetmore families - Rock outcrop complex, stony.
-7 Gothic family.
-8 Supervisor - Limber families complex.
-9 Troutville family, very stony.
-10 Bullwark - Catamount families - Rock outcrop complex, rubbly.
-11 Bullwark - Catamount families - Rock land complex, rubbly.
-12 Legault family - Rock land complex, stony.
-13 Catamount family - Rock land - Bullwark family complex, rubbly.
-14 Pachic Argiborolis - Aquolis complex.
-15 unspecified in the USFS Soil and ELU Survey.
-16 Cryaquolis - Cryoborolis complex.
-17 Gateview family - Cryaquolis complex.
-18 Rogert family, very stony.
-19 Typic Cryaquolis - Borohemists complex.
-20 Typic Cryaquepts - Typic Cryaquolls complex.
-21 Typic Cryaquolls - Leighcan family, till substratum complex.
-22 Leighcan family, till substratum, extremely bouldery.
-23 Leighcan family, till substratum - Typic Cryaquolls complex.
-24 Leighcan family, extremely stony.
-25 Leighcan family, warm, extremely stony.
-26 Granile - Catamount families complex, very stony.
-27 Leighcan family, warm - Rock outcrop complex, extremely stony.
-28 Leighcan family - Rock outcrop complex, extremely stony.
-29 Como - Legault families complex, extremely stony.
-30 Como family - Rock land - Legault family complex, extremely stony.
-31 Leighcan - Catamount families complex, extremely stony.
-32 Catamount family - Rock outcrop - Leighcan family complex, extremely stony.
-33 Leighcan - Catamount families - Rock outcrop complex, extremely stony.
-34 Cryorthents - Rock land complex, extremely stony.
-35 Cryumbrepts - Rock outcrop - Cryaquepts complex.
-36 Bross family - Rock land - Cryumbrepts complex, extremely stony.
-37 Rock outcrop - Cryumbrepts - Cryorthents complex, extremely stony.
-38 Leighcan - Moran families - Cryaquolls complex, extremely stony.
-39 Moran family - Cryorthents - Leighcan family complex, extremely stony.
-40 Moran family - Cryorthents - Rock land complex, extremely stony.
+*   Cathedral family - Rock outcrop complex, extremely stony.
+
+*   Vanet - Ratake families complex, very stony.
+
+*   Haploborolis - Rock outcrop complex, rubbly.
+
+*   Ratake family - Rock outcrop complex, rubbly.
+
+*   Vanet family - Rock outcrop complex complex, rubbly.
+
+*   Vanet - Wetmore families - Rock outcrop complex, stony.
+
+*   Gothic family.
+
+*   Supervisor - Limber families complex.
+
+*   Troutville family, very stony.
+
+*   Bullwark - Catamount families - Rock outcrop complex, rubbly.
+
+*   Bullwark - Catamount families - Rock land complex, rubbly.
+
+*   Legault family - Rock land complex, stony.
+
+*   Catamount family - Rock land - Bullwark family complex, rubbly.
+
+*   Pachic Argiborolis - Aquolis complex.
+
+*   unspecified in the USFS Soil and ELU Survey.
+
+*   Cryaquolis - Cryoborolis complex.
+
+*   Gateview family - Cryaquolis complex.
+
+*   Rogert family, very stony.
+
+*   Typic Cryaquolis - Borohemists complex.
+
+*   Typic Cryaquepts - Typic Cryaquolls complex.
+
+*   Typic Cryaquolls - Leighcan family, till substratum complex.
+
+*   Leighcan family, till substratum - Typic Cryaquolls complex.
+
+*   Leighcan family, till substratum, extremely bouldery.
+
+*   Leighcan family, extremely stony.
+
+*   Leighcan family, warm, extremely stony.
+
+*   Granile - Catamount families complex, very stony.
+
+*   Leighcan family, warm - Rock outcrop complex, extremely stony.
+
+*   Leighcan family - Rock outcrop complex, extremely stony.
+
+*   Como - Legault families complex, extremely stony.
+
+*   Como family - Rock land - Legault family complex, extremely stony.
+
+*   Leighcan - Catamount families complex, extremely stony.
+
+*   Catamount family - Rock outcrop - Leighcan family complex, extremely stony.
+
+*   Leighcan - Catamount families - Rock outcrop complex, extremely stony.
+
+*   Cryorthents - Rock land complex, extremely stony.
+
+*   Cryumbrepts - Rock outcrop - Cryaquepts complex.
+
+*   Bross family - Rock land - Cryumbrepts complex, extremely stony.
+
+*   Rock outcrop - Cryumbrepts - Cryorthents complex, extremely stony.
+
+*   Leighcan - Moran families - Cryaquolls complex, extremely stony.
+
+*   Moran family - Cryorthents - Leighcan family complex, extremely stony.
+
+*   Moran family - Cryorthents - Rock land complex, extremely stony.
+
