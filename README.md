@@ -48,10 +48,10 @@ The training set (15120 observations) contains both features and the Cover_Type.
 
 The wilderness areas are:
 
-- Rawah Wilderness Area
-- Neota Wilderness Area
-- Comanche Peak Wilderness Area
-- Cache la Poudre Wilderness Area
+-Rawah Wilderness Area
+-Neota Wilderness Area
+-Comanche Peak Wilderness Area
+-Cache la Poudre Wilderness Area
 
 The soil types are:
 
