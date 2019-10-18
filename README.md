@@ -53,7 +53,7 @@ The training set (15120 observations) contains both features and the Cover_Type.
 *  Comanche Peak Wilderness Area
 *  Cache la Poudre Wilderness Area
 
-**The soil types are:
+**The soil types are:**
 
 *   Cathedral family - Rock outcrop complex, extremely stony.
 
