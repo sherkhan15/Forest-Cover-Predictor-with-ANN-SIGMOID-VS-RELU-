@@ -46,14 +46,14 @@ The training set (15120 observations) contains both features and the Cover_Type.
 * Soil_Type (40 binary columns, 0 = absence or 1 = presence) - Soil Type designation
 * Cover_Type (7 types, integers 1 to 7) - Forest Cover Type designation
 
-The wilderness areas are:
+**The wilderness areas are:**
 
 *  Rawah Wilderness Area
 *  Neota Wilderness Area
 *  Comanche Peak Wilderness Area
 *  Cache la Poudre Wilderness Area
 
-The soil types are:
+**The soil types are:
 
 *   Cathedral family - Rock outcrop complex, extremely stony.
 
