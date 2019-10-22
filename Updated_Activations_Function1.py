@@ -676,7 +676,7 @@ y = y/np.max(y,axis=0)
 class NeuralNetwork(object):
     def __init__(self):
         #parameters
-        self.inputSize = 53S
+        self.inputSize = 53
         self.outputSize = 1
         self.hiddenSize = 45
         
